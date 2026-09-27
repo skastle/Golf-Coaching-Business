@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Golf Coaching Business — Product Video</title>
+<meta name="viewport" content="width=1920">
+<style>
+@font-face{font-family:Inter;font-weight:400;src:url(fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:500;src:url(fonts/inter-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;src:url(fonts/inter-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;src:url(fonts/inter-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:800;src:url(fonts/inter-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:600;src:url(fonts/montserrat-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:700;src:url(fonts/montserrat-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:800;src:url(fonts/montserrat-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:Montserrat;font-weight:900;src:url(fonts/montserrat-latin-900-normal.woff2) format("woff2")}
+
+/* ---- Brand tokens: swap these to match the website exactly ---- */
+:root{
+  --bg-deep:#04201A;
+  --bg:#07332A;
+  --green:#0F5A45;
+  --fairway:#1E8A5F;
+  --mint:#5BE3A0;
+  --gold:#F2C14E;
+  --white:#F7FAF7;
+  --ink:#0C2A21;
+  --muted:rgba(247,250,247,.72);
+  --card:#FFFFFF;
+  --line:#E4ECE7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--bg-deep)}
+body{font-family:Inter,sans-serif;color:var(--white);-webkit-font-smoothing:antialiased}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;background:radial-gradient(1200px 800px at 50% 40%,#0B4A3A 0%,var(--bg) 45%,var(--bg-deep) 100%)}
+#contours{position:absolute;inset:-200px;opacity:.16}
+#glow1,#glow2{position:absolute;border-radius:50%;filter:blur(140px)}
+#glow1{width:800px;height:800px;background:#1E8A5F;opacity:.30}
+#glow2{width:700px;height:700px;background:#F2C14E;opacity:.09}
+#grain{position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>")}
+.scene{position:absolute;inset:0;opacity:0;will-change:transform,opacity}
+.abs{position:absolute}
+.center{position:absolute;left:0;right:0;text-align:center}
+.h0{font:900 132px/1.0 Montserrat,sans-serif;letter-spacing:-4px}
+.h1{font:800 96px/1.06 Montserrat,sans-serif;letter-spacing:-2.5px}
+.h2{font:800 72px/1.08 Montserrat,sans-serif;letter-spacing:-1.8px}
+.h3{font:800 48px/1.1 Montserrat,sans-serif;letter-spacing:-1px}
+.sub{font:500 36px/1.35 Inter,sans-serif;color:var(--muted)}
+.gold{color:var(--gold)}
+.mint{color:var(--mint)}
+.w{display:inline-block;white-space:pre}
+.kicker{display:inline-flex;align-items:center;gap:12px;font:700 22px Inter;letter-spacing:3px;text-transform:uppercase;color:var(--mint);padding:12px 22px;border:2px solid rgba(91,227,160,.4);border-radius:999px;background:rgba(91,227,160,.08)}
+.kicker svg{width:24px;height:24px}
+svg.i{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card{background:var(--card);color:var(--ink);border-radius:28px;box-shadow:0 40px 90px rgba(0,0,0,.40),0 6px 18px rgba(0,0,0,.18)}
+.glass{background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.14);border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.25)}
+
+/* logo */
+.logo{display:flex;align-items:center;gap:26px}
+.mark{width:120px;height:120px;border-radius:32px;background:linear-gradient(145deg,var(--fairway),var(--green));display:grid;place-items:center;box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 2px 0 rgba(255,255,255,.2)}
+.wordmark{font:900 54px/0.95 Montserrat;letter-spacing:-1px;text-align:left}
+.wordmark small{display:block;font:700 22px Inter;letter-spacing:9px;color:var(--gold);margin-top:10px}
+
+/* s2 chaos */
+.note{position:absolute;display:flex;align-items:center;gap:18px;padding:22px 28px;border-radius:22px;background:#fff;color:var(--ink);font:600 28px Inter;box-shadow:0 30px 60px rgba(0,0,0,.35);white-space:nowrap}
+.note .ic{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;flex:none}
+.note .ic svg{width:30px;height:30px}
+.note small{display:block;font:500 20px Inter;color:#6B7F76;margin-top:4px}
+.red{background:#FFE8E5;color:#E0473A}.amb{background:#FFF3D6;color:#C98A00}.blu{background:#E3EEFF;color:#3563D8}.pur{background:#F0E7FF;color:#7A45D8}
+
+/* s4 hero */
+.phone{position:absolute;width:520px;height:900px;border-radius:70px;background:#0A0F0D;padding:18px;box-shadow:0 60px 120px rgba(0,0,0,.55),0 0 0 3px rgba(255,255,255,.08)}
+.screen{width:100%;height:100%;border-radius:54px;background:#F3F6F4;overflow:hidden;position:relative}
+.phead{height:130px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:flex-end;gap:16px;padding:0 28px 18px}
+.avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--fairway),var(--green));display:grid;place-items:center;color:#fff;font:700 22px Inter}
+.phead b{font:700 24px Inter;color:var(--ink);display:block}
+.phead span{font:500 18px Inter;color:#6B7F76}
+.chat{padding:24px 22px;display:flex;flex-direction:column;gap:14px}
+.bub{max-width:82%;padding:16px 20px;border-radius:24px;font:500 22px/1.35 Inter}
+.bub.in{background:#fff;color:var(--ink);align-self:flex-start;border-bottom-left-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+.bub.out{background:var(--green);color:#fff;align-self:flex-end;border-bottom-right-radius:6px}
+.bub .tag{display:flex;align-items:center;gap:6px;font:700 14px Inter;letter-spacing:1px;text-transform:uppercase;color:var(--mint);margin-bottom:6px}
+.bub .tag svg{width:16px;height:16px}
+.typing{align-self:flex-end;background:var(--green);border-radius:24px;padding:18px 22px;display:flex;gap:8px}
+.typing i{width:10px;height:10px;border-radius:50%;background:#fff;display:block}
+.chip{position:absolute;display:flex;align-items:center;gap:16px;padding:18px 26px 18px 18px;border-radius:20px;background:#fff;color:var(--ink);font:700 26px Inter;box-shadow:0 24px 60px rgba(0,0,0,.35);white-space:nowrap}
+.chip .ic{width:48px;height:48px;border-radius:14px;background:#DDF7EA;color:#138A55;display:grid;place-items:center}
+.chip .ic svg{width:26px;height:26px}
+.chip small{display:block;font:500 18px Inter;color:#6B7F76}
+.lesson{position:absolute;width:620px;padding:36px 40px;border-radius:32px}
+.tee{height:300px;border-radius:24px;position:relative;overflow:hidden;background:linear-gradient(180deg,#8FD3F4 0%,#CDEFFB 55%,#5DBB63 55.2%,#2E8B4E 100%)}
+.clock{font:800 88px Montserrat;letter-spacing:-2px}
+.bar{height:14px;border-radius:7px;background:rgba(255,255,255,.14);overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--mint),var(--gold));border-radius:7px}
+
+/* s5 tiles */
+.tile{position:absolute;width:540px;height:270px;padding:34px 36px;border-radius:28px}
+.tile .ic{width:68px;height:68px;border-radius:20px;background:rgba(91,227,160,.14);color:var(--mint);display:grid;place-items:center;margin-bottom:20px}
+.tile .ic svg{width:38px;height:38px}
+.tile b{display:block;font:800 33px Montserrat;white-space:nowrap;letter-spacing:-.5px;margin-bottom:10px}
+.tile span{font:500 24px/1.35 Inter;color:var(--muted)}
+
+/* s6 inbox */
+.inbox{position:absolute;width:880px;padding:0;overflow:hidden}
+.ihead{padding:28px 34px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font:800 30px Montserrat}
+.ihead span{font:600 20px Inter;color:#138A55;background:#DDF7EA;padding:8px 16px;border-radius:999px}
+.row{display:flex;align-items:center;gap:22px;padding:22px 34px;border-bottom:1px solid var(--line)}
+.row .avatar{width:60px;height:60px;flex:none}
+.row .t{flex:1;min-width:0}
+.row b{font:700 24px Inter;display:block}
+.row p{font:500 20px Inter;color:#6B7F76;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;font:700 17px Inter;flex:none}
+.badge svg{width:18px;height:18px}
+.chan{position:absolute;display:flex;align-items:center;gap:14px;padding:18px 26px;border-radius:999px;font:700 28px Inter;color:#fff;white-space:nowrap}
+.chan svg{width:30px;height:30px}
+
+/* s7 calendar */
+.cal{position:absolute;width:1060px;padding:34px}
+.cal .grid{display:grid;grid-template-columns:90px repeat(5,1fr);gap:10px;margin-top:22px}
+.cal .dh{font:700 22px Inter;color:#6B7F76;text-align:center;padding-bottom:6px}
+.cal .tm{font:600 18px Inter;color:#8A9C94;text-align:right;padding-right:10px;height:74px;line-height:74px}
+.cal .cell{height:74px;border-radius:14px;background:#F2F6F4;position:relative}
+.slot{position:absolute;inset:0;border-radius:14px;background:linear-gradient(135deg,var(--fairway),var(--green));color:#fff;padding:10px 14px;font:700 18px Inter;line-height:1.25}
+.slot small{display:block;font:500 15px Inter;opacity:.8}
+
+/* s8 pipeline */
+.col{position:absolute;width:380px;height:560px;border-radius:26px;padding:26px}
+.col h4{font:800 26px Montserrat;margin-bottom:6px}
+.col .n{font:600 18px Inter;color:var(--muted)}
+.ghost{height:96px;border-radius:18px;background:rgba(255,255,255,.07);margin-top:18px}
+.lead{position:absolute;width:330px;padding:22px 24px;border-radius:20px;display:flex;align-items:center;gap:18px}
+.lead b{font:700 26px Inter;display:block}
+.lead span{font:600 18px Inter;color:#138A55}
+.auto{position:absolute;display:flex;align-items:center;gap:12px;font:700 22px Inter;color:var(--gold);white-space:nowrap}
+.auto svg{width:26px;height:26px}
+
+/* s9 marketing */
+.mk{position:absolute;width:400px;height:420px;border-radius:28px;padding:32px;overflow:hidden}
+.mk b{display:block;font:800 32px/1.1 Montserrat;margin-top:24px}
+.mk span{display:block;font:500 22px/1.35 Inter;color:var(--muted);margin-top:10px}
+.mini{height:170px;border-radius:18px;background:#fff;position:relative;overflow:hidden}
+
+/* s10 stack */
+.tool{position:absolute;display:flex;align-items:center;gap:14px;padding:20px 28px;border-radius:20px;font:700 28px Inter;white-space:nowrap}
+.tool svg{width:32px;height:32px}
+.tool .x{position:absolute;left:10px;right:10px;top:50%;height:5px;background:#FF6B5B;border-radius:3px;transform-origin:left center}
+
+/* s11 */
+.fact{position:absolute;width:520px;min-height:210px;padding:34px;border-radius:26px;text-align:left}
+.fact b{display:block;font:900 64px Montserrat;color:var(--gold);letter-spacing:-2px}
+.fact span{font:600 26px/1.3 Inter;color:var(--white)}
+
+.btn{display:inline-flex;align-items:center;gap:16px;padding:30px 50px;border-radius:999px;background:var(--gold);color:var(--ink);font:800 40px Montserrat;box-shadow:0 20px 60px rgba(242,193,78,.35)}
+.btn svg{width:36px;height:36px;stroke-width:2.6}
+
+#wm{position:absolute;left:56px;top:48px;opacity:0}
+#wm .mark{width:56px;height:56px;border-radius:16px}
+#wm .wordmark{font-size:24px}
+#wm .wordmark small{font-size:11px;letter-spacing:4.4px;margin-top:5px}
+#flash{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+#ring{position:absolute;left:960px;top:540px;width:10px;height:10px;border-radius:50%;border:6px solid var(--gold);opacity:0}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="glow1" class="abs"></div><div id="glow2" class="abs"></div>
+  <svg id="contours" viewBox="0 0 2320 1480" preserveAspectRatio="none"></svg>
+
+  <!-- S1 HOOK -->
+  <div class="scene" id="s1" data-start="0" data-end="5.2">
+    <div class="center h1" style="top:300px"><div class="words" data-in="0.3">You became a golf coach</div></div>
+    <div class="center h1" style="top:410px"><div class="words" data-in="0.9">to help golfers play better.</div></div>
+    <div class="center h1" style="top:600px"><div class="words" data-in="2.4">Not to <span class="gold">chase admin.</span></div></div>
+    <div class="abs" id="uline" style="left:0;top:716px;height:10px;border-radius:5px;background:var(--gold)"></div>
+  </div>
+
+  <!-- S2 CHAOS -->
+  <div class="scene" id="s2" data-start="5.2" data-end="10.6">
+    <div class="center h2" style="top:70px"><div class="words" data-in="0.1">Sound familiar?</div></div>
+    <div id="notes"></div>
+  </div>
+
+  <!-- S3 BRAND -->
+  <div class="scene" id="s3" data-start="10.6" data-end="15.8">
+    <div class="abs" style="left:0;right:0;top:300px;display:flex;justify-content:center">
+      <div class="logo" id="biglogo" data-in="0.2" data-a="pop" data-d="0.9">
+        <div class="mark" style="width:170px;height:170px;border-radius:44px"><svg viewBox="0 0 64 64" width="110" height="110"><circle cx="40" cy="47" r="7" fill="#fff"/><circle cx="38" cy="45" r="1" fill="#CFE3D8"/><circle cx="42" cy="46" r="1" fill="#CFE3D8"/><circle cx="40" cy="49.5" r="1" fill="#CFE3D8"/><path d="M20 54V10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M22 11l20 7-20 7z" fill="#F2C14E"/><ellipse cx="22" cy="55" rx="12" ry="3" fill="rgba(0,0,0,.25)"/></svg></div>
+        <div class="wordmark" style="font-size:86px">GOLF COACHING<small style="font-size:32px;letter-spacing:15px">BUSINESS</small></div>
+      </div>
+    </div>
+    <div class="center h3" style="top:590px;font-weight:700"><div class="words" data-in="1.2">The all-in-one business system & AI assistant</div></div>
+    <div class="center h3" style="top:655px;font-weight:700"><div class="words" data-in="1.6"><span class="mint">built for golf coaches.</span></div></div>
+    <div class="center sub" style="top:790px" data-in="2.6">From the team that's spent 20+ years helping coaches grow.</div>
+  </div>
+
+  <!-- S4 HERO: AI while you coach -->
+  <div class="scene" id="s4" data-start="15.8" data-end="27.2">
+    <div class="abs" style="left:110px;top:150px;width:1060px">
+      <div class="kicker" data-in="0.1"><svg class="i" viewBox="0 0 24 24" data-ic="sparkle"></svg>AI that works while you coach</div>
+      <div class="h2" style="margin-top:30px;font-size:64px"><div class="words" data-in="0.35">Keep your business</div></div>
+      <div class="h2" style="font-size:64px"><div class="words" data-in="0.6">running smoothly</div></div>
+      <div class="h2" style="font-size:64px"><div class="words" data-in="0.9"><span class="gold">whilst you're helping golfers.</span></div></div>
+    </div>
+    <div class="lesson glass" id="lesson" style="left:110px;top:540px" data-in="1.5" data-a="up">
+      <div style="display:flex;justify-content:space-between;align-items:flex-end">
+        <div><div style="font:700 20px Inter;letter-spacing:3px;color:var(--mint);text-transform:uppercase">On the range now</div>
+        <div style="font:700 32px Inter;margin-top:8px">Lesson with James</div></div>
+        <div class="clock" id="clock">10:00</div>
+      </div>
+      <div class="bar" style="margin-top:26px"><i id="lbar" style="width:0%"></i></div>
+      <div style="display:flex;justify-content:space-between;font:600 20px Inter;color:var(--muted);margin-top:14px"><span>10:00</span><span>Phone in your pocket</span><span>11:00</span></div>
+    </div>
+    <div class="phone" style="left:1210px;top:120px" data-in="1.2" data-a="right">
+      <div class="screen">
+        <div class="phead"><div class="avatar">SL</div><div><b>Sarah (new golfer)</b><span>Website chat · just now</span></div></div>
+        <div class="chat" id="chat">
+          <div class="bub in" data-t="2.4">Hi! Do you do lessons for complete beginners?</div>
+          <div class="typing" data-t="3.3" data-t2="4.1"><i></i><i></i><i></i></div>
+          <div class="bub out" data-t="4.1"><div class="tag"><svg class="i" viewBox="0 0 24 24" data-ic="sparkle"></svg>AI assistant</div>We do! Our 5-lesson Beginner Programme is perfect. Want to book your first lesson?</div>
+          <div class="bub in" data-t="5.6">Yes please! Saturday morning?</div>
+          <div class="typing" data-t="6.2" data-t2="6.9"><i></i><i></i><i></i></div>
+          <div class="bub out" data-t="6.9"><div class="tag"><svg class="i" viewBox="0 0 24 24" data-ic="sparkle"></svg>AI assistant</div>Saturday 9:00am is free. You're booked in! See you on the range.</div>
+        </div>
+      </div>
+    </div>
+    <div class="chip" style="left:800px;top:560px" data-in="7.6" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="calendar"></svg></div><div>Lesson booked<small>Saturday · 9:00am</small></div></div>
+    <div class="chip" style="left:770px;top:680px" data-in="8.1" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="card"></svg></div><div>Deposit paid<small>Taken automatically</small></div></div>
+    <div class="chip" style="left:800px;top:800px" data-in="8.6" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="bell"></svg></div><div>Reminder scheduled<small>Text + email</small></div></div>
+    <div class="abs sub" style="left:110px;top:940px;font-weight:600" data-in="9.1">All handled — <span class="mint">before your lesson finished.</span></div>
+  </div>
+
+  <!-- S5 AI GRID -->
+  <div class="scene" id="s5" data-start="27.2" data-end="33.6">
+    <div class="center h2" style="top:125px"><div class="words" data-in="0.1">Your AI assistant <span class="gold">never takes a day off.</span></div></div>
+    <div class="tile glass" style="left:110px;top:290px" data-in="0.7" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="phone"></svg></div><b>Answers your calls</b><span>Even mid-lesson, or at 10pm</span></div>
+    <div class="tile glass" style="left:690px;top:290px" data-in="0.85" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="chat"></svg></div><b>Replies to messages</b><span>Texts, website chat, Facebook & Instagram</span></div>
+    <div class="tile glass" style="left:1270px;top:290px" data-in="1.0" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="calendar"></svg></div><b>Books lessons for you</b><span>Straight into your diary</span></div>
+    <div class="tile glass" style="left:110px;top:600px" data-in="1.15" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="repeat"></svg></div><b>Follows up enquiries</b><span>So no golfer slips through the net</span></div>
+    <div class="tile glass" style="left:690px;top:600px" data-in="1.3" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="star"></svg></div><b>Grows your reviews</b><span>Asks happy golfers and replies for you</span></div>
+    <div class="tile glass" style="left:1270px;top:600px" data-in="1.45" data-a="pop"><div class="ic"><svg class="i" viewBox="0 0 24 24" data-ic="pen"></svg></div><b>Writes your content</b><span>Social posts, emails and newsletters</span></div>
+  </div>
+
+  <!-- S6 INBOX -->
+  <div class="scene" id="s6" data-start="33.6" data-end="39.4">
+    <div class="abs" style="left:110px;top:250px;width:720px">
+      <div class="kicker" data-in="0.1"><svg class="i" viewBox="0 0 24 24" data-ic="chat"></svg>One inbox</div>
+      <div class="h1" style="margin-top:30px"><div class="words" data-in="0.3">Every message.</div></div>
+      <div class="h1"><div class="words" data-in="0.7"><span class="gold">One place.</span></div></div>
+      <div class="sub" style="margin-top:34px" data-in="1.3">Texts, emails, WhatsApp, Facebook and Instagram — reply from your laptop or the mobile app, between lessons.</div>
+    </div>
+    <div class="inbox card" style="left:930px;top:170px" data-in="0.5" data-a="right">
+      <div class="ihead">Conversations<span>All caught up</span></div>
+      <div class="row" data-in="1.2" data-a="left"><div class="avatar">MB</div><div class="t"><b>Mark B.</b><p>Can I move Thursday's lesson to 5pm?</p></div><div class="badge" style="background:#DDF7EA;color:#128C4B"><svg class="i" viewBox="0 0 24 24" data-ic="chat"></svg>WhatsApp</div></div>
+      <div class="row" data-in="1.45" data-a="left"><div class="avatar" style="background:linear-gradient(135deg,#E1306C,#F77737)">JK</div><div class="t"><b>Jess K.</b><p>Do you run junior group sessions?</p></div><div class="badge" style="background:#FDE7EF;color:#C2185B"><svg class="i" viewBox="0 0 24 24" data-ic="insta"></svg>Instagram</div></div>
+      <div class="row" data-in="1.7" data-a="left"><div class="avatar" style="background:linear-gradient(135deg,#3563D8,#5B8DEF)">PT</div><div class="t"><b>Paul T.</b><p>Thanks coach, driver feels great!</p></div><div class="badge" style="background:#E3EEFF;color:#3563D8"><svg class="i" viewBox="0 0 24 24" data-ic="fb"></svg>Facebook</div></div>
+      <div class="row" data-in="1.95" data-a="left"><div class="avatar" style="background:linear-gradient(135deg,#C98A00,#F2C14E)">AL</div><div class="t"><b>Anna L.</b><p>Booking a gift voucher for my husband</p></div><div class="badge" style="background:#FFF3D6;color:#A87000"><svg class="i" viewBox="0 0 24 24" data-ic="mail"></svg>Email</div></div>
+      <div class="row" data-in="2.2" data-a="left" style="border:0"><div class="avatar" style="background:linear-gradient(135deg,#7A45D8,#A77BF3)">DR</div><div class="t"><b>Dave R.</b><p>Running 10 mins late, sorry!</p></div><div class="badge" style="background:#F0E7FF;color:#7A45D8"><svg class="i" viewBox="0 0 24 24" data-ic="phone"></svg>Text</div></div>
+    </div>
+  </div>
+
+  <!-- S7 BOOKING -->
+  <div class="scene" id="s7" data-start="39.4" data-end="45.2">
+    <div class="abs" style="left:110px;top:200px;width:620px">
+      <div class="kicker" data-in="0.1"><svg class="i" viewBox="0 0 24 24" data-ic="calendar"></svg>Online booking</div>
+      <div class="h2" style="margin-top:30px"><div class="words" data-in="0.3">Golfers book and pay online.</div></div>
+      <div class="h2"><div class="words" data-in="0.8"><span class="gold">24/7.</span></div></div>
+      <div id="bl" style="margin-top:40px;display:flex;flex-direction:column;gap:22px;font:600 30px Inter">
+        <div data-in="1.6" style="display:flex;gap:16px;align-items:center"><svg class="i mint" viewBox="0 0 24 24" data-ic="check" style="width:36px;height:36px;stroke-width:3"></svg>Payment taken at booking</div>
+        <div data-in="1.9" style="display:flex;gap:16px;align-items:center"><svg class="i mint" viewBox="0 0 24 24" data-ic="check" style="width:36px;height:36px;stroke-width:3"></svg>Automatic text & email reminders</div>
+        <div data-in="2.2" style="display:flex;gap:16px;align-items:center"><svg class="i mint" viewBox="0 0 24 24" data-ic="check" style="width:36px;height:36px;stroke-width:3"></svg>Fewer no-shows</div>
+      </div>
+    </div>
+    <div class="cal card" id="cal" style="left:780px;top:180px" data-in="0.4" data-a="right">
+      <div style="display:flex;justify-content:space-between;align-items:center"><div style="font:800 32px Montserrat">Your coaching diary</div><div class="badge" style="background:#DDF7EA;color:#138A55;font-size:20px">This week</div></div>
+      <div class="grid" id="calgrid"></div>
+    </div>
+  </div>
+
+  <!-- S8 PIPELINE -->
+  <div class="scene" id="s8" data-start="45.2" data-end="51.4">
+    <div class="center h2" style="top:80px"><div class="words" data-in="0.1">Turn one-off lessons into</div></div>
+    <div class="center h2" style="top:165px"><div class="words" data-in="0.5"><span class="gold">coaching programmes.</span></div></div>
+    <div id="cols"></div>
+    <div class="lead card" id="lead"><div class="avatar">ER</div><div><b>Emma R.</b><span id="leadstage">New enquiry</span></div></div>
+    <div class="auto" id="auto"><svg class="i" viewBox="0 0 24 24" data-ic="zap"></svg><span id="autotxt"></span></div>
+  </div>
+
+  <!-- S9 MARKETING -->
+  <div class="scene" id="s9" data-start="51.4" data-end="57.2">
+    <div class="center h2" style="top:80px"><div class="words" data-in="0.1">Everything you need to <span class="gold">fill your diary.</span></div></div>
+    <div class="mk glass" style="left:110px;top:270px" data-in="0.6" data-a="up">
+      <div class="mini"><div style="height:34px;background:var(--green)"></div><div style="padding:18px"><div style="height:18px;width:70%;background:#0C2A21;border-radius:4px"></div><div style="height:12px;width:90%;background:#D9E3DE;border-radius:4px;margin-top:12px"></div><div style="height:12px;width:60%;background:#D9E3DE;border-radius:4px;margin-top:8px"></div><div style="height:34px;width:150px;background:var(--gold);border-radius:17px;margin-top:16px"></div></div></div>
+      <b>Websites & booking pages</b><span>That turn visitors into golfers</span></div>
+    <div class="mk glass" style="left:560px;top:270px" data-in="0.8" data-a="up">
+      <div class="mini" style="display:flex;flex-direction:column;gap:10px;padding:18px"><div style="display:flex;gap:10px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#DDF7EA"></div><div style="height:12px;width:60%;background:#D9E3DE;border-radius:4px"></div></div><div style="display:flex;gap:10px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#FFF3D6"></div><div style="height:12px;width:70%;background:#D9E3DE;border-radius:4px"></div></div><div style="display:flex;gap:10px;align-items:center"><div style="width:36px;height:36px;border-radius:50%;background:#E3EEFF"></div><div style="height:12px;width:50%;background:#D9E3DE;border-radius:4px"></div></div></div>
+      <b>Email & text campaigns</b><span>Fill quiet weeks in a few clicks</span></div>
+    <div class="mk glass" style="left:1010px;top:270px" data-in="1.0" data-a="up">
+      <div class="mini" style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:14px"><div style="background:linear-gradient(135deg,#1E8A5F,#5BE3A0);border-radius:10px"></div><div style="background:linear-gradient(135deg,#F2C14E,#F7DD8E);border-radius:10px"></div><div style="background:linear-gradient(135deg,#0F5A45,#1E8A5F);border-radius:10px"></div><div style="background:linear-gradient(135deg,#F7DD8E,#F2C14E);border-radius:10px"></div><div style="background:linear-gradient(135deg,#5BE3A0,#1E8A5F);border-radius:10px"></div><div style="background:linear-gradient(135deg,#0C2A21,#0F5A45);border-radius:10px"></div></div>
+      <b>Social media planner</b><span>Schedule a month of posts at once</span></div>
+    <div class="mk glass" style="left:1460px;top:270px;width:350px" data-in="1.2" data-a="up">
+      <div class="mini" style="display:grid;place-items:center;background:linear-gradient(135deg,#0F5A45,#04201A)"><svg class="i" viewBox="0 0 24 24" data-ic="play" style="width:72px;height:72px;color:#fff;stroke-width:1.5"></svg></div>
+      <b>Courses & community</b><span>Sell online coaching & memberships</span></div>
+    <div class="center" style="top:780px" data-in="1.8" data-a="up"><div class="glass" style="display:inline-flex;align-items:center;gap:18px;padding:24px 38px;border-radius:999px;font:600 30px Inter"><svg class="i gold" viewBox="0 0 24 24" data-ic="sparkle" style="width:34px;height:34px"></svg>Plus done-for-you templates: social posts, player questionnaires & newsletters</div></div>
+  </div>
+
+  <!-- S10 STACK -->
+  <div class="scene" id="s10" data-start="57.2" data-end="63.4">
+    <div class="center h2" style="top:80px"><div class="words" data-in="0.1">Stop juggling <span class="gold">lots of different apps.</span></div></div>
+    <div id="tools"></div>
+    <div class="abs" id="onebox" style="left:0;right:0;top:420px;display:flex;flex-direction:column;align-items:center;gap:44px">
+      <div class="logo"><div class="mark"><svg viewBox="0 0 64 64" width="78" height="78"><circle cx="40" cy="47" r="7" fill="#fff"/><path d="M20 54V10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M22 11l20 7-20 7z" fill="#F2C14E"/></svg></div><div class="wordmark" style="font-size:60px">GOLF COACHING<small style="font-size:24px;letter-spacing:11px">BUSINESS</small></div></div>
+      <div class="h3" style="font-weight:700">One system. One login. <span class="gold">One monthly price.</span></div>
+    </div>
+  </div>
+
+  <!-- S11 BENEFITS -->
+  <div class="scene" id="s11" data-start="63.4" data-end="69.4">
+    <div class="center h0" style="top:170px"><div class="words" data-in="0.1">Less admin.</div></div>
+    <div class="center h0" style="top:310px"><div class="words" data-in="0.6"><span class="gold">More coaching.</span></div></div>
+    <div class="center sub" style="top:470px;font-size:40px;font-weight:600;color:var(--white)" data-in="1.2">And a better work/life balance.</div>
+    <div class="fact glass" style="left:120px;top:640px" data-in="1.9" data-a="up"><b>20+ years</b><span>helping golf coaches grow their business</span></div>
+    <div class="fact glass" style="left:700px;top:640px" data-in="2.1" data-a="up"><b>PGA pros</b><span>built by coaches who know your world</span></div>
+    <div class="fact glass" style="left:1280px;top:640px" data-in="2.3" data-a="up"><b>~1 hour</b><span>a month to keep it personal to you</span></div>
+  </div>
+
+  <!-- S12 CTA -->
+  <div class="scene" id="s12" data-start="69.4" data-end="76">
+    <div class="abs" style="left:0;right:0;top:230px;display:flex;justify-content:center">
+      <div class="logo" data-in="0.2" data-a="pop" data-d="0.9">
+        <div class="mark" style="width:150px;height:150px;border-radius:40px"><svg viewBox="0 0 64 64" width="96" height="96"><circle cx="40" cy="47" r="7" fill="#fff"/><path d="M20 54V10" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M22 11l20 7-20 7z" fill="#F2C14E"/><ellipse cx="22" cy="55" rx="12" ry="3" fill="rgba(0,0,0,.25)"/></svg></div>
+        <div class="wordmark" style="font-size:78px">GOLF COACHING<small style="font-size:29px;letter-spacing:14px">BUSINESS</small></div>
+      </div>
+    </div>
+    <div class="center h3" style="top:500px;font-weight:700"><div class="words" data-in="0.9">Spend your time <span class="mint">coaching golfers.</span> We'll handle the rest.</div></div>
+    <div class="center" style="top:640px" data-in="1.6" data-a="pop"><div class="btn">golfcoachingbusiness.com<svg class="i" viewBox="0 0 24 24" data-ic="arrow"></svg></div></div>
+    <div class="center sub" style="top:820px;font-size:30px" data-in="2.2">Book a chat with our team today</div>
+  </div>
+
+  <div id="wm"><div class="logo" style="gap:14px"><div class="mark"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="40" cy="47" r="7" fill="#fff"/><path d="M20 54V10" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M22 11l20 7-20 7z" fill="#F2C14E"/></svg></div><div class="wordmark">GOLF COACHING<small>BUSINESS</small></div></div></div>
+  <div id="ring"></div>
+  <div id="flash"></div>
+  <div id="grain"></div>
+</div>
+
+<script>
+const DURATION = 76, FPS = 30;
+const $ = s => document.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const lerp = (a, b, p) => a + (b - a) * p;
+const E = {
+  lin: t => t,
+  out: t => 1 - Math.pow(1 - t, 3),
+  in: t => t * t * t,
+  inOut: t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2,
+  expo: t => t >= 1 ? 1 : 1 - Math.pow(2, -10 * t),
+  back: t => { const c = 1.7, c3 = c + 1; return 1 + c3 * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); },
+};
+const P = (t, a, b, e = E.out) => e(clamp((t - a) / (b - a)));
+function tf(el, { x = 0, y = 0, s = 1, r = 0, o = 1, b = 0 } = {}) {
+  el.style.transform = `translate(${x}px,${y}px) scale(${s}) rotate(${r}deg)`;
+  el.style.opacity = o;
+  el.style.filter = b > 0.05 ? `blur(${b}px)` : 'none';
+}
+
+/* ---------- icons ---------- */
+const IC = {
+  phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  chat: '<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',
+  calendar: '<rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+  star: '<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
+  mail: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+  check: '<polyline points="20 6 9 17 4 12"/>',
+  clock: '<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+  users: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+  globe: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  zap: '<polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>',
+  pen: '<path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>',
+  card: '<rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>',
+  alert: '<circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>',
+  file: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/>',
+  play: '<circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/>',
+  insta: '<rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
+  fb: '<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+  layout: '<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/>',
+  share: '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>',
+  repeat: '<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
+  bell: '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>',
+  sparkle: '<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 3v4M17 5h4"/>',
+  arrow: '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>',
+  clipboard: '<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/>',
+};
+const svg = (n, cls = 'i') => `<svg class="${cls}" viewBox="0 0 24 24">${IC[n]}</svg>`;
+
+/* ---------- build dynamic content ---------- */
+// contour lines (golf green topography)
+(function () {
+  const g = $('#contours'); let h = '';
+  const centers = [[600, 500], [1800, 1050]];
+  centers.forEach(([cx, cy], ci) => {
+    for (let k = 1; k < 16; k++) {
+      let d = ''; const R = k * 52;
+      for (let a = 0; a <= 64; a++) {
+        const th = a / 64 * Math.PI * 2;
+        const w = 1 + .10 * Math.sin(3 * th + k * .5 + ci) + .06 * Math.cos(5 * th - k * .3);
+        const x = cx + Math.cos(th) * R * 1.35 * w, y = cy + Math.sin(th) * R * w;
+        d += (a ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1);
+      }
+      h += `<path d="${d}Z" fill="none" stroke="#9BE7C0" stroke-width="2"/>`;
+    }
+  });
+  g.innerHTML = h;
+})();
+
+$$('svg[data-ic]').forEach(s => { s.innerHTML = IC[s.dataset.ic]; });
+
+// chaos notes
+const NOTES = [
+  ['phone', 'red', 'Missed call', '3 new golfers today', 140, 250, -4],
+  ['insta', 'pur', '"How much are lessons?"', 'Instagram · 2 days ago', 1170, 220, 3],
+  ['card', 'amb', 'Who hasn’t paid yet?', 'Lesson packages', 250, 470, 2],
+  ['alert', 'red', 'No-show at 2pm', 'Again…', 1260, 460, -3],
+  ['chat', 'blu', 'Text Sarah back', 'Reminder · overdue', 700, 330, -2],
+  ['file', 'amb', 'Update the spreadsheet', 'Last done: March', 120, 720, 3],
+  ['share', 'pur', 'Post on social media', 'You haven’t posted in 3 weeks', 1100, 700, -2],
+  ['repeat', 'blu', 'Chase package renewals', '6 golfers due this month', 620, 580, 2],
+  ['mail', 'red', '47 unread emails', 'Inbox', 700, 850, -3],
+];
+$('#notes').innerHTML = NOTES.map(([ic, c, t, s, x, y, r]) =>
+  `<div class="note" data-x="${x}" data-y="${y}" data-r="${r}" style="left:${x}px;top:${y}px"><div class="ic ${c}">${svg(ic)}</div><div>${t}<small>${s}</small></div></div>`).join('');
+
+// calendar
+(function () {
+  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'], times = ['9:00', '10:00', '11:00', '1:00', '2:00', '3:00'];
+  const booked = { '0-0': 'Tom H.|Driver lesson', '1-1': 'Sarah L.|Beginner #1', '0-2': 'Group|Juniors', '2-1': 'Mark B.|Short game', '3-3': 'Anna L.|Gift voucher', '4-0': 'Paul T.|Playing lesson', '2-4': 'Jess K.|Putting', '4-3': 'Dave R.|Programme', '1-4': 'Emma R.|Trial lesson', '3-0': 'Chris P.|Fitting', '1-5': 'Group|Ladies clinic', '4-5': 'Liam S.|Programme', '0-4': 'Kate W.|Bunkers', '3-5': 'Ben G.|Programme' };
+  let h = '<div></div>' + days.map(d => `<div class="dh">${d}</div>`).join('');
+  let order = 0;
+  const keys = Object.keys(booked);
+  times.forEach((tm, ti) => {
+    h += `<div class="tm">${tm}</div>`;
+    days.forEach((d, di) => {
+      const k = di + '-' + ti;
+      if (booked[k]) {
+        const [n, l] = booked[k].split('|');
+        const idx = keys.indexOf(k);
+        h += `<div class="cell"><div class="slot" data-in="${(1.0 + idx * 0.22).toFixed(2)}" data-a="pop" data-d="0.45">${n}<small>${l}</small></div></div>`;
+      } else h += '<div class="cell"></div>';
+    });
+  });
+  $('#calgrid').innerHTML = h;
+})();
+
+// pipeline columns
+const COLS = [['New enquiry', 'Auto-reply in seconds'], ['Trial lesson', 'Booked & reminded'], ['Coaching programme', 'Monthly, recurring'], ['Loyal member', 'Reviews & referrals']];
+const COLX = [80, 520, 960, 1400], COLY = 330;
+$('#cols').innerHTML = COLS.map(([h, n], i) => `<div class="col glass" style="left:${COLX[i]}px;top:${COLY}px" data-in="${0.5 + i * 0.12}" data-a="up"><h4>${h}</h4><div class="n">${n}</div><div class="ghost"></div><div class="ghost" style="opacity:.6"></div><div class="ghost" style="opacity:.35"></div></div>`).join('');
+
+// stack tools
+const TOOLS = [['calendar', 'Booking app'], ['mail', 'Email tool'], ['layout', 'Website builder'], ['clipboard', 'Forms'], ['share', 'Social scheduler'], ['play', 'Course platform'], ['card', 'Payments'], ['file', 'Spreadsheets']];
+$('#tools').innerHTML = TOOLS.map(([ic, n], i) => {
+  const a = i / TOOLS.length * Math.PI * 2 - Math.PI / 2;
+  const x = 960 + Math.cos(a) * 640, y = 600 + Math.sin(a) * 300;
+  return `<div class="tool glass" data-x="${x}" data-y="${y}" data-i="${i}">${svg(ic)}${n}<div class="x"></div></div>`;
+}).join('');
+
+// split words
+$$('.words').forEach(el => {
+  const out = [];
+  el.childNodes.forEach(n => {
+    if (n.nodeType === 3) n.textContent.split(/(\s+)/).forEach(w => { if (w.trim()) out.push(`<span class="w">${w}</span>`); else if (w) out.push(' '); });
+    else n.textContent.split(/(\s+)/).forEach(w => { if (w.trim()) out.push(`<span class="w ${n.className}">${w}</span>`); else if (w) out.push(' '); });
+  });
+  el.innerHTML = out.join('');
+});
+
+/* ---------- generic animation ---------- */
+function animEl(el, lt) {
+  const tin = +el.dataset.in, type = el.dataset.a || 'up', d = +(el.dataset.d || 0.7);
+  const p = clamp((lt - tin) / d);
+  let st = { o: 1 };
+  if (type === 'up') { const e = E.expo(p); st = { y: (1 - e) * 60, o: clamp(p * 2.2), b: (1 - e) * 12 }; }
+  else if (type === 'pop') { const e = E.back(p); st = { s: lerp(.6, 1, e), o: clamp(p * 3), b: (1 - clamp(p * 2)) * 10 }; }
+  else if (type === 'left') { const e = E.expo(p); st = { x: (1 - e) * -120, o: clamp(p * 2.2), b: (1 - e) * 10 }; }
+  else if (type === 'right') { const e = E.expo(p); st = { x: (1 - e) * 160, o: clamp(p * 2.2), b: (1 - e) * 10 }; }
+  else if (type === 'fade') { st = { o: E.out(p) }; }
+  tf(el, st);
+}
+function animWords(el, lt) {
+  const tin = +el.dataset.in;
+  $$('.w', el).forEach((w, i) => {
+    const p = clamp((lt - tin - i * 0.075) / 0.7), e = E.expo(p);
+    tf(w, { y: (1 - e) * 70, o: clamp(p * 2.5), b: (1 - e) * 14, r: (1 - e) * 4 });
+  });
+}
+
+/* ---------- scene hooks ---------- */
+const HOOKS = {
+  s1(lt) {
+    // underline under "chase admin."
+    const g = $$('#s1 .w.gold'); const ul = $('#uline');
+    if (g.length) {
+      const a = g[0].getBoundingClientRect(), b = g[g.length - 1].getBoundingClientRect(), sr = $('#stage').getBoundingClientRect();
+      const p = P(lt, 3.3, 4.0, E.inOut);
+      ul.style.left = (a.left - sr.left) + 'px'; ul.style.width = ((b.right - a.left) * p) + 'px';
+      ul.style.top = (a.bottom - sr.top + 2) + 'px';
+    }
+    // push first two lines back when third arrives
+    const d = P(lt, 2.2, 2.9, E.inOut);
+    $$('#s1 .center').slice(0, 2).forEach(el => tf(el, { y: -d * 40, o: 1 - d * .55 }));
+  },
+  s2(lt) {
+    const notes = $$('#notes .note');
+    notes.forEach((n, i) => {
+      const tin = 0.5 + i * 0.36, p = clamp((lt - tin) / 0.5), e = E.back(p);
+      const x0 = +n.dataset.x, y0 = +n.dataset.y, r0 = +n.dataset.r;
+      const w = n.offsetWidth, h = n.offsetHeight;
+      const shake = p >= 1 ? Math.sin(lt * 18 + i) * 2 * clamp((lt - tin - 0.5) * 2) : 0;
+      // collapse to centre
+      const c = P(lt, 4.25, 4.85, E.in);
+      const dx = (960 - (x0 + w / 2)) * c, dy = (560 - (y0 + h / 2)) * c;
+      tf(n, { x: dx + shake, y: dy + (1 - e) * 40, s: lerp(.5, 1, e) * (1 - c * .95), r: r0 + shake * .6 + c * 25 * (i % 2 ? 1 : -1), o: clamp(p * 3) * (1 - P(lt, 4.7, 4.9, E.lin)), b: c * 6 });
+    });
+  },
+  s4(lt) {
+    const mins = Math.floor(clamp(lt / 10.5) * 52);
+    $('#clock').textContent = '10:' + String(mins).padStart(2, '0');
+    $('#lbar').style.width = (clamp(lt / 10.5) * 87) + '%';
+    const chat = $('#chat');
+    $$(':scope > *', chat).forEach(b => {
+      const t = +b.dataset.t, t2 = b.dataset.t2 ? +b.dataset.t2 : 1e9;
+      const vis = lt >= t && lt < t2;
+      b.style.display = vis ? '' : 'none';
+      if (vis) {
+        const p = clamp((lt - t) / .45), e = E.back(p);
+        tf(b, { s: lerp(.7, 1, e), y: (1 - e) * 20, o: clamp(p * 3) });
+        b.style.transformOrigin = b.classList.contains('in') ? 'left bottom' : 'right bottom';
+        if (b.classList.contains('typing')) $$('i', b).forEach((d, k) => d.style.opacity = .35 + .65 * Math.max(0, Math.sin(lt * 9 - k * .9)));
+      }
+    });
+  },
+  s8(lt) {
+    const lead = $('#lead'), auto = $('#auto');
+    const steps = [1.4, 2.7, 4.0];
+    let pos = 0;
+    steps.forEach(s => pos += P(lt, s, s + .7, E.inOut));
+    const i0 = Math.floor(pos), f = pos - i0;
+    const x = lerp(COLX[Math.min(i0, 3)], COLX[Math.min(i0 + 1, 3)], f) + 25;
+    const lift = Math.sin(f * Math.PI);
+    const pin = P(lt, 0.9, 1.4, E.back);
+    lead.style.left = x + 'px'; lead.style.top = (COLY + 110) + 'px';
+    tf(lead, { y: -lift * 40, r: lift * 4, s: lerp(.6, 1, pin) * (1 + lift * .06), o: clamp((lt - .9) * 4) });
+    lead.style.boxShadow = `0 ${40 + lift * 40}px ${90 + lift * 50}px rgba(0,0,0,${.4 + lift * .15})`;
+    const stage = Math.round(pos);
+    const labels = ['New enquiry', 'Trial lesson booked', 'Joined programme', 'Loyal member'];
+    const autos = ['Auto-reply sent instantly', 'Reminder sent automatically', 'Programme offer sent', 'Review request sent'];
+    $('#leadstage').textContent = labels[stage];
+    $('#autotxt').textContent = autos[stage];
+    auto.style.left = (COLX[stage] + 30) + 'px'; auto.style.top = (COLY + 250) + 'px';
+    const since = lt - (stage === 0 ? 1.4 : steps[stage - 1] + .7);
+    const ap = clamp(since / .4);
+    tf(auto, { y: (1 - E.out(ap)) * 16, o: lt < 1.2 ? 0 : clamp(ap * 2) * (lift > .2 ? 0 : 1) });
+  },
+  s10(lt) {
+    $$('#tools .tool').forEach((el, i) => {
+      const x0 = +el.dataset.x, y0 = +el.dataset.y, w = el.offsetWidth, h = el.offsetHeight;
+      const p = clamp((lt - 0.5 - i * 0.13) / .5), e = E.back(p);
+      const c = P(lt, 3.2 + i * .03, 3.8 + i * .03, E.in);
+      const bob = Math.sin(lt * 2 + i) * 6;
+      el.style.left = (x0 - w / 2) + 'px'; el.style.top = (y0 - h / 2) + 'px';
+      tf(el, { x: (960 - x0) * c, y: (560 - y0) * c + bob * (1 - c), s: lerp(.5, 1, e) * (1 - c * .9), o: clamp(p * 3) * (1 - P(lt, 3.6, 3.85, E.lin)), b: c * 8 });
+      const xp = P(lt, 2.2 + i * .08, 2.5 + i * .08, E.out);
+      el.querySelector('.x').style.transform = `scaleX(${xp})`;
+    });
+    const ob = $('#onebox'), q = clamp((lt - 3.85) / .8), e = E.back(q);
+    tf(ob, { s: lerp(.5, 1, e), o: clamp(q * 3), b: (1 - clamp(q * 2)) * 10 });
+  },
+};
+
+/* ---------- master render ---------- */
+const SCENES = $$('.scene').map(el => ({ el, id: el.id, a: +el.dataset.start, b: +el.dataset.end }));
+const TIN = 0.45, TOUT = 0.4;
+function render(t) {
+  // background drift
+  $('#contours').style.transform = `translate(${Math.sin(t * .07) * 40}px,${Math.cos(t * .05) * 30}px) rotate(${t * .15}deg)`;
+  $('#glow1').style.transform = `translate(${300 + Math.sin(t * .23) * 300}px,${100 + Math.cos(t * .17) * 150}px)`;
+  $('#glow2').style.transform = `translate(${1200 + Math.cos(t * .19) * 250}px,${500 + Math.sin(t * .21) * 180}px)`;
+
+  SCENES.forEach(sc => {
+    const { el, a, b } = sc;
+    if (t < a - 0.01 || t > b + 0.01) { el.style.opacity = 0; el.style.visibility = 'hidden'; return; }
+    el.style.visibility = 'visible';
+    const lt = t - a;
+    const pin = a === 0 ? 1 : P(t, a, a + TIN, E.out);
+    const pout = P(t, b - TOUT, b, E.in);
+    const s = lerp(1.06, 1, pin) * lerp(1, .94, pout);
+    tf(el, { s, o: pin * (1 - pout), b: (1 - pin) * 14 + pout * 16 });
+    $$('[data-in]', el).forEach(x => { if (x.classList.contains('words')) animWords(x, lt); else if (!x.closest('.words')) animEl(x, lt); });
+    if (HOOKS[sc.id]) HOOKS[sc.id](lt);
+  });
+
+  // watermark
+  const wo = P(t, 16.2, 16.8) * (1 - P(t, 68.8, 69.3));
+  tf($('#wm'), { o: wo * .9, x: (1 - P(t, 16.2, 16.9, E.expo)) * -30 });
+
+  // gold ring burst into brand reveal
+  const rp = clamp((t - 10.2) / .9);
+  const ring = $('#ring');
+  ring.style.opacity = rp > 0 && rp < 1 ? (1 - rp) : 0;
+  const d = 20 + E.expo(rp) * 2400;
+  ring.style.width = ring.style.height = d + 'px';
+  ring.style.transform = 'translate(-50%,-50%)';
+  ring.style.borderWidth = (10 * (1 - rp) + 2) + 'px';
+  // brief flash
+  $('#flash').style.opacity = Math.max(0, .5 - Math.abs(t - 10.35) * 3) * .5;
+}
+window.render = render; window.DURATION = DURATION; window.FPS = FPS;
+
+// preview mode: play in real time unless ?frame is used by the renderer
+if (!location.search.includes('render')) {
+  let t0 = null;
+  const loop = ts => { if (t0 === null) t0 = ts; const t = ((ts - t0) / 1000) % DURATION; render(t); requestAnimationFrame(loop); };
+  document.fonts.ready.then(() => requestAnimationFrame(loop));
+}
+</script>
+</body>
+</html>
